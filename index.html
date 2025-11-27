@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Project | Nike</title>
+    <link rel="shortcut icon" href="./images/icon/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 개별 css, script 파일 작성 위치 -->
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="log">
+                <ul>
+                    <li><a href="#" onclick="event.prseventDefault()">로그인</a></li>
+                    <li><a href="#" onclick="event.preventDefault()">회원가입</a></li>
+                    <li><a href="#" onclick="event.preventDefault()">매장찾기</a></li>
+                    <li><a href="#" onclick="event.preventDefault()">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="nav_menu">
+                <h1><a href="https://www.nike.com/kr/" target="_blank"><img src="./images/icon/logo.png" alt="나이키 로고"></a></h1>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault()">BEST</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">NEW</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">남성</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">여성</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">키즈</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">JORDAN</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">SALE</a></li>
+                    </ul>
+                </div>
+                <div class="icon_menu">
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="./images/icon/search.png" alt="검색"></a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="./images/icon/cart.png" alt="장바구니"></a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="./images/icon/my_page.png" alt="마이페이지"></a></li>
+                        <li><a href="#" onclick="event.preventDefault()"><img src="./images/icon/hambergur.png" alt="햄버거바"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="banner-section">
+            <div class="swiper banner">
+                <!-- 래퍼(슬라이드들을 감싸는 영역) -->
+                <div class="swiper-wrapper">
+                    <!-- 개별 슬라이드 -->
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/main_banner.png" alt="메인배너 이미지"></a>
+                        <div class="puffer_write_01">
+                            <h2>스우시 시리즈 푸퍼 패딩</h2>
+                            <p>추위를 위한 설계, 움직임을 위한 디자인</p>
+                            <a class="view_more" href="#" onclick="event.preventDefault()"><span>VIEW MORE</span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main_banner2.jpg" alt="메인배너 이미지2">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- 뉴아이템 -->
+        <section class="new_item">
+            <h2>NEW ITEM</h2>
+            <div class="more_view_section">
+                <div class="more_view">
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault()">ALL</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">의류</a></li>
+                        <li><a class="clothes" href="#" onclick="event.preventDefault()">신발</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">용품</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">스포츠</a></li>
+                    </ul>
+                </div>
+                <div class="more_check">
+                    <a href="#" onclick="event.preventDefault()">더보기
+                        <img src="./images/icon/arrow_gray.png" alt="회색 화살표">
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Swiper 시작 -->
+            <div class="swiper new_item_list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_001.png" alt="신상 1"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 샥스 NZ</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">159,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/red_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_002.png" alt="신상 2"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 에어 포스 1 LV8 4</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">139,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_003.png" alt="신상 3"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 가토 LV8</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">139,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_004.png" alt="신상 4"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 V5 RNR</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">89,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_005.png" alt="신상 5"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 줌 보메로 5</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">209,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_006.png" alt="신상 6"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 샥스 R4</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">179,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/001_new_item/new_item_007.png" alt="신상 7"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 샥스 라이드 2 프리미엄</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a href="#" onclick="event.preventDefault()">239,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 스크롤바 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <!-- 광고 배너 -->
+        <div class="ad">
+            <div class="swiper ad">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/ad_banner_001.png" alt="광고배너 1"></a>
+                        <div class="des">
+                            <p class="des_section_01">Soft Warmth, Daily Comfort</p>
+                            <p class="des_section_02">뛰어난 보온성과 높은 실용성의 플리스 자켓</p>
+                            <p>에어로히트 본딩 플리스가 전하는 가벼운 온기와 세련된 실루엣</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/ad_banner_002.jpg" alt="광고배너 2"></a>
+                        <div class="des">
+                            <p class="des_section_01">Light Warmth, Active Style</p>
+                            <p class="des_section_02">가볍게 따뜻한 키즈 액티브 다운</p>
+                            <p>활동성과 스타일을 고루 갖춘 키즈 에센셜 다운패딩</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/ad_banner_003.jpg" alt="광고배너 3"></a>
+                        <div class="des">
+                            <p class="des_section_01">Your Winter Line</p>
+                            <p class="des_section_02">Puffer Padding</p>
+                            <p>겨울의 우아함을 실루엣으로 완성하는 푸퍼패딩</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- 베스트 셀러 -->
+        <section class="best_seller">
+            <a href="./images/refer/new_item.png" target="_blank"><h2>BEST SELLERS</h2></a>
+            <div class="more_view_section">
+                <div class="more_view">
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault()">ALL</a></li>
+                        <li><a class="clothes" href="#" onclick="event.preventDefault()">의류</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">신발</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">용품</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">스포츠</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="best_section">
+                <div class="best_main">
+                    <a href="#" onclick="event.preventDefault()"><img class="seller_main" src="./images/best_seller_main.png" alt="베스트셀러 메인 이미지"></a>
+                    <a class="view_more" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                </div>
+                <div class="best_right_section">
+                    <div class="button_section">
+                        <a class="sports" href="#" onclick="event.preventDefault()">스포츠 웨어</a>
+                        <a href="#" onclick="event.preventDefault()">아우터 웨어</a>
+                        <a href="#" onclick="event.preventDefault()">재킷</a>
+                        <a href="#" onclick="event.preventDefault()">티셔츠</a>
+                        <a href="#" onclick="event.preventDefault()">팬츠</a>
+                    </div>
+                    <div class="best_main">
+                        <h3>나이키 스포츠웨어</h3>
+                        <div class="best_more">
+                            <span>가장 따뜻한 레이어로 빛나는 룩을 연출해 보세요, 가장 추운 계절에도 포근함을 유지해 줍니다.</span>
+                            <div class="more_check">
+                                <a href="#" onclick="event.preventDefault()">더보기
+                                    <img src="./images/icon/arrow_gray.png" alt="회색 화살표">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper item">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_002.png" alt="베스트 1"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 남성 오버사이즈 우븐 트랙 재킷 검정</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">139,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/red_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_003.png" alt="베스트 2"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 클럽 오버사이즈 우븐 트랙 재킷 회색</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">136,900원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_004.png" alt="베스트 3"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">나이키 여성 오버사이즈 우븐 재킷</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">124,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_005.png" alt="베스트 4"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">남성 다운 파카</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">419,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_006.png" alt="베스트 5"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">남성 써마 핏 파카</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">349,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_007.png" alt="베스트 6"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">남성 스테이트먼트 다운 베스트</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">265,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_008.png" alt="베스트 7"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">남성 써마 핏 ADV 베스트</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">265,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/002_best_seller/best_seller_009.png" alt="베스트 8"></a>
+                                <a href="#" onclick="event.preventDefault()"><p class="new_p">남성 써마 핏 루즈 베스트</p></a>
+                                <div class="product_flex">
+                                    <div class="product_detail">
+                                        <a href="#" onclick="event.preventDefault()">239,000원</a>
+                                    </div>
+                                    <div class="price_icon">
+                                        <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                        <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 스크롤바 -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 카리나 피처링 -->
+        <div class="featuring">
+            <a href="#" onclick="event.preventDefault()"><img src="./images/003_featuring/featuring_001.png" alt="카리나 1"></a>
+            <div class="puffer">
+                <a href="#" onclick="event.preventDefault()"><p class="fw">2025 FW WINTER SEASON<br>PUFFER CLOTHES</p></a>
+                <a href="#" onclick="event.preventDefault()"><p>FEATURING. AESPA KARINA</p></a>
+            </div>
+            <a href="#" onclick="event.preventDefault()"><img src="./images/003_featuring/featuring_002.png" alt="카리나 2"></a>
+        </div>
+        
+        <!-- 푸퍼 패딩 -->
+        <section class="puffer_padding">
+            <div class="puffer_section">
+                <div class="puffer_write">
+                    <a class="view_more_puffer" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                    <p>카리나와 함께한 스우시 푸퍼 패딩</p>
+                    <a href="./images/refer/karina.png" target="_blank"><h3>PUFFER PADDING</h3></a>
+                    <p>COLLABORATION</p>
+                </div>
+                <div class="swiper puffer_list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_003.png" alt="푸퍼 2"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 써마 핏 오버사이즈 다운 패딩 재킷 검정</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">329,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/red_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_002.png" alt="푸퍼 1"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 써마 핏 오버사이즈 다운 패딩 재킷 실버</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">329,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/white_line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_005.png" alt="푸퍼 4"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 오버사이즈 다운 베스트 검정</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">269,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/white_line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_006.png" alt="푸퍼 5"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 써마 핏 오버사이즈 다운 트렌치 코트</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">479,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/white_line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_007.png" alt="푸퍼 6"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 오버사이즈 다운 베스트 핑크</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">269,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/white_line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img class="puffer_images" src="./images/004_puffer_padding/puffer_padding_004.png" alt="푸퍼 3"></a>
+                        <a href="#" onclick="event.preventDefault()"><p class="puffer_p">여성 써마 핏 오버사이즈 다운 패딩 재킷 화이트</p></a>
+                        <div class="product_flex">
+                            <div class="product_detail">
+                                <a class="puffer_white" href="#" onclick="event.preventDefault()">329,000원</a>
+                            </div>
+                            <div class="price_icon">
+                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart_white.png" alt="장바구니"></a>
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/white_line_heart.png" alt="찜"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 스크롤바 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- clothes 컬렉션 -->
+        <section class="clothes_collection">
+            <div class="col_group">
+                <div class="col_left">
+                    <h2>CLOTHES COLLECTION</h2>
+                <div class="more_view">
+                    <ul>
+                        <li><a href="#" onclick="event.preventDefault()">남성</a></li>
+                        <li><a class="clothes" href="#" onclick="event.preventDefault()">여성</a></li>
+                        <li><a href="#" onclick="event.preventDefault()">키즈</a></li>
+                    </ul>
+                </div>
+                <div class="col_right_section">
+                    <div class="col_left">
+                        <div class="but">
+                            <div class="button_section">
+                            <a href="#" onclick="event.preventDefault()">스포츠 웨어</a>
+                            <a class="outer" href="#" onclick="event.preventDefault()">아우터 웨어</a>
+                            <a href="#" onclick="event.preventDefault()">재킷</a>
+                            <a href="#" onclick="event.preventDefault()">티셔츠</a>
+                            <a href="#" onclick="event.preventDefault()">팬츠</a>
+                            </div>
+                            <div class="more_check">
+                                <a href="#" onclick="event.preventDefault()">더보기
+                                    <img src="./images/icon/arrow_gray.png" alt="회색 화살표">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper item">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/005_clothes_collection/clothes_collection_001.png" alt="컬렉션 1"></a>
+                                        <a href="#" onclick="event.preventDefault()"><p class="new_p">여성 써마 핏 베스트</p></a>
+                                        <div class="product_flex">
+                                            <div class="product_detail">
+                                                <a href="#" onclick="event.preventDefault()">239,000원</a>
+                                            </div>
+                                            <div class="price_icon">
+                                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/red_heart.png" alt="찜"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/005_clothes_collection/clothes_collection_002.png" alt="컬렉션 2"></a>
+                                        <a href="#" onclick="event.preventDefault()"><p class="new_p">여성 써마 핏 후드 패딩</p></a>
+                                        <div class="product_flex">
+                                            <div class="product_detail">
+                                                <a href="#" onclick="event.preventDefault()">239,000원</a>
+                                            </div>
+                                            <div class="price_icon">
+                                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/005_clothes_collection/clothes_collection_003.png" alt="컬렉션 3"></a>
+                                        <a href="#" onclick="event.preventDefault()"><p class="new_p">여성 루즈 프린트 인조 퍼 재킷</p></a>
+                                        <div class="product_flex">
+                                            <div class="product_detail">
+                                                <a href="#" onclick="event.preventDefault()">191,000원</a>
+                                            </div>
+                                            <div class="price_icon">
+                                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/005_clothes_collection/clothes_collection_004.png" alt="컬렉션 4"></a>
+                                        <a href="#" onclick="event.preventDefault()"><p class="new_p">여성 스톰 핏 루즈 후드 다운 패딩</p></a>
+                                        <div class="product_flex">
+                                            <div class="product_detail">
+                                                <a href="#" onclick="event.preventDefault()">299,000원</a>
+                                            </div>
+                                            <div class="price_icon">
+                                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" onclick="event.preventDefault()"><img class="best_img" src="./images/005_clothes_collection/clothes_collection_005.png" alt="컬렉션 5"></a>
+                                        <a href="#" onclick="event.preventDefault()"><p class="new_p">여성 써마 핏 러닝 재킷</p></a>
+                                        <div class="product_flex">
+                                            <div class="product_detail">
+                                                <a href="#" onclick="event.preventDefault()">175,000원</a>
+                                            </div>
+                                            <div class="price_icon">
+                                                <a href="#" onclick="event.preventDefault()"><img class="cart" src="./images/icon/cart.png" alt="장바구니"></a>
+                                                <a href="#" onclick="event.preventDefault()"><img src="./images/icon/line_heart.png" alt="찜"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 스크롤바 -->
+                                <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col_right">
+                    <div class="best_main">
+                        <a href="#" onclick="event.preventDefault()"><img class="seller_main" src="./images/best_seller_main_2.png" alt="베스트셀러 메인 이미지"></a>
+                        <a class="view_more" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 조던 -->
+        <section class="jordan">
+            <div class="jordan_section">
+                <a href="./images/refer/jordan.png" target="_blank"><h3>JORDAN COLLECTION</h3></a>
+                <p>스타일의 정점, 조던 컬렉션</p>
+                <div class="button_002">
+                    <a class="jo_shoes" href="#" onclick="event.preventDefault()">조던 신발</a>
+                    <a href="#" onclick="event.preventDefault()">조던 의류</a>
+                    <a href="#" onclick="event.preventDefault()">조던 용품</a>
+                </div>
+            </div>
+            <div class="collection_section">
+                <ul>
+                    <li>
+                        <div class="section_001">
+                            <a href="#" onclick="event.preventDefault()" class="main_link">
+                                <div class="jordan_write">
+                                    <h4>조던 1</h4>
+                                    <p>아이코닉한 스타일,<br>독특한 개성</p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./images/006_jordan_collection/jordan_collection_002.png" alt="조던 1" class="shoe_img main">
+                                    <img src="./images/006_jordan_collection/shadow_jordan_collection_001.png" alt="조던 1 그림자" class="shoe_img hover">
+                                </div>
+                            </a>
+                            <button class="more_btn">더보기</button> <!-- a 대신 button -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section_001">
+                            <a href="#" onclick="event.preventDefault()" class="main_link">
+                                <div class="jordan_write">
+                                    <h4>조던 스파이자이크</h4>
+                                    <p>아이코닉한 스니커즈,<br>희소성있는 디자인</p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./images/006_jordan_collection/jordan_collection_003.png" alt="조던 2" class="shoe_img main">
+                                    <img src="./images/006_jordan_collection/shadow_jordan_collection_002.png" alt="조던 2 그림자" class="shoe_img hover">
+                                </div>
+                            </a>
+                            <button class="more_btn">더보기</button> <!-- a 대신 button -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section_001">
+                            <a href="#" onclick="event.preventDefault()" class="main_link">
+                                <div class="jordan_write">
+                                    <h4>조던 루카 돈치치</h4>
+                                    <p>내마모성이 우수한 메쉬,<br>탄력 있는 에어 쿠션</p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./images/006_jordan_collection/jordan_collection_004.png" alt="조던 3" class="shoe_img main">
+                                    <img src="./images/006_jordan_collection/shadow_jordan_collection_003.png" alt="조던 3 그림자" class="shoe_img hover">
+                                </div>
+                            </a>
+                            <button class="more_btn">더보기</button> 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section_001">
+                            <a href="#" onclick="event.preventDefault()" class="main_link">
+                                <div class="jordan_write">
+                                    <h4>조던 트루너 LX</h4>
+                                    <p>편안한 착용감,<br>활용도 높은 아이템</p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./images/006_jordan_collection/jordan_collection_005.png" alt="조던 4" class="shoe_img main">
+                                    <img src="./images/006_jordan_collection/shadow_jordan_collection_004.png" alt="조던 4 그림자" class="shoe_img hover">
+                                </div>
+                            </a>
+                            <button class="more_btn">더보기</button> <!-- a 대신 button -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section_001">
+                            <a href="#" onclick="event.preventDefault()" class="main_link">
+                                <div class="jordan_write">
+                                    <h4>조던 세션</h4>
+                                    <p>유연한 스웨이드 소재,<br>빈티지한 매력</p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./images/006_jordan_collection/jordan_collection_006.png" alt="조던 58" class="shoe_img main">
+                                    <img src="./images/006_jordan_collection/shadow_jordan_collection_005.png" alt="조던 5 그림자" class="shoe_img hover">
+                                </div>
+                            </a>
+                            <button class="more_btn">더보기</button> <!-- a 대신 button -->
+                        </div>
+                    </li>
+                </ul>
+                <button class="moreview_btn">VIEW MORE</button> <!-- a 대신 button -->
+            </div>
+        </section>
+        
+        <!-- 보메로 -->
+        <section id="bomero_sec">
+            <div class="bomero_write">
+                <a href="./images/refer/bomero.png" target="_blank"><h3>보메로 × 페가수스 × 스트럭쳐</h3></a>
+                <p>속도, 안정, 쿠셔닝 완벽의 삼박자</p>
+                <div class="button_002">
+                    <a href="#" onclick="event.preventDefault()">보메로</a>
+                    <a href="#" onclick="event.preventDefault()">페가수스</a>
+                    <a href="#" onclick="event.preventDefault()">스트럭쳐</a>
+                </div>
+            </div>
+            <!-- Swiper 구조 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_002.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 18 GORE-TEX</h3>
+                                <p>반사 디자인 포인트</p>
+                                <p>209,000원</p>
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_003.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 플러스</h3>
+                                <p>최상의 풀스택 쿠셔닝으로 인한 극강의 편안함</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_004.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 18</h3>
+                                <p>남성 생활 방수 로드 러닝화</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_005.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 플러스</h3>
+                                <p>반응성이 매우 뛰어난 줌X 폼 중창</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_006.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 플러스</h3>
+                                <p>여성 로드 러닝화</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_007.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 플러스</h3>
+                                <p>엔지니어드 메쉬 갑피가 적용</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <a href="#" class="collabo_card" onclick="event.preventDefault()">
+                            <img src="./images/007_bomero_collabo/collabo_008.png" alt="보메로 1">
+                            <div class="title_text">
+                                <h3 class="smalltext">나이키 보메로 플러스</h3>
+                                <p>오래 지속되는 접지력</p>
+                                <p>209,000원</p>
+                                <!-- a 대신 span으로 버튼 모양만 주기 -->
+                                <span class="bomero_view_more">VIEW MORE</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- 내비게이션 버튼 -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
+        </section>
+
+        <!-- 키즈 컬렉션 -->
+        <section class="kids">
+            <div class="kids_write">
+                <h3>KIDS COLLECTION</h3>
+                <p>아이들의 모든 사이즈, 한 곳에서 완성되는 스타일</p>
+                <a class="view_more" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+            </div>
+            <div class="kids_list">
+                <ul>
+                    <li>
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/008_kids_collection/kids_collection_001.png" alt="키즈 1"></a>
+                        <p>베이비 (0세 - 3세)</p>
+                        <div class="hide_text">
+                            <h4>Baby</h4>
+                            <span class="big">베이비 (0세 - 3세)</span>
+                            <span>하루하루가 특별한 아이에게</span>
+                            <span>사랑을 담은 베이비 컬렉션</span>
+                            <a class="view_more_kids" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/008_kids_collection/kids_collection_002.png" alt="키즈 2"></a>
+                        <p>리틀 키즈 (3세 - 7세)</p>
+                        <div class="hide_text">
+                            <h4>Little Kids</h4>
+                            <span class="big">리틀 키즈 (3세 - 7세)</span>
+                            <span>활동 가득한 아이들을 위한 편안한</span>
+                            <span>스타일, 리틀 키즈 컬렉션</span>
+                            <a class="view_more_kids" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/008_kids_collection/kids_collection_003.jpg" alt="키즈 3"></a>
+                        <p>주니어 (7세 - 15세)</p>
+                        <div class="hide_text">
+                            <h4>Junior</h4>
+                            <span class="big">주니어 (7세 - 15세)</span>
+                            <span>활동과 스타일을 모두 담은</span>
+                            <span>주니어 데일리룩</span>
+                            <a class="view_more_kids" href="#" onclick="event.preventDefault()">VIEW MORE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 룩북 -->
+        <section class="look">
+            <div class="look_write">
+                <a href="./images/refer/lookbook.png" target="_blank"><h3>LOOKBOOK</h3></a>
+                <p>감각적인 컬러와 실루엣으로 완성한 키즈 스타일</p>
+            </div>
+            <div class="but">
+                <div class="button_section">
+                    <a href="#" onclick="event.preventDefault()">베이비</a>
+                    <a href="#" onclick="event.preventDefault()">리틀키즈</a>
+                    <a class="junior" href="#" onclick="event.preventDefault()">주니어</a>
+                </div>
+                <div class="more_check">
+                    <a href="#" onclick="event.preventDefault()">더보기
+                        <img src="./images/icon/arrow_gray.png" alt="회색 화살표">
+                    </a>
+                </div>
+            </div>
+            <!-- 룩북 스와이퍼 -->
+            <div class="swiper look_book">
+                <div class="swiper-wrapper">
+                    <!-- 섹션 1 -->
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/1/046.png" alt="룩북메인 1"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/1/047.png" alt="룩북 1"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 Polartec 풀집 후디</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>119,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/1/048.png" alt="룩북 2"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 Polartec 팬츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>95,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/2/043.png" alt="룩북메인 2"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/2/044.png" alt="룩북 3"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>드라이 핏 긴팔 쿼터집 축구 드릴 탑</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>59,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/2/045.png" alt="룩북 4"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 드라이 핏 축구 팬츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>59,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/3/049.png" alt="룩북메인 3"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/3/050.png" alt="룩북 5"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>나이키 x LEGO 컬렉션 티셔츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>59,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/3/051.png" alt="룩북 6"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 드라이 핏 크로스오버 쇼츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>59,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/4/052.png" alt="룩북메인 4"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/4/053.png" alt="룩북 7"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 오버사이즈 풀오버 후디</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>75,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/4/054.png" alt="룩북 8"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 카고 팬츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>69,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/5/057.png" alt="룩북메인 5"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/5/056.png" alt="룩북 9"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 써마 핏 쿼터집 탑</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>59,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/5/058.png" alt="룩북 10"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어 써마 핏 쿼터집 팬츠</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>69,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/6/059.png" alt="룩북메인 6"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/6/060.png" alt="룩북 11"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>여아 드라이 핏 플리스 후디 퍼플</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>71,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/6/061.png" alt="룩북 12"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>여아 드라이 핏 플리스 후디 그레이</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>71,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/7/063.png" alt="룩북메인 7"></a>
+                        <div class="look_images">
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/7/062.png" alt="룩북 13"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어(남아) 우븐 재킷 블랙</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>139,000원</p></a>
+                                </div>
+                            </div>
+                            <div class="look_section">
+                                <a href="#" onclick="event.preventDefault()"><img src="./images/009_lookbook/7/064.png" alt="룩북 14"></a>
+                                <div class="look_price">
+                                    <a href="#" onclick="event.preventDefault()"><p>주니어(남아) 우븐 재킷 카키</p></a>
+                                    <a href="#" onclick="event.preventDefault()"><p>139,000원</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <!-- 카테고리 -->
+        <section class="shop_by">
+            <h3>SHOP BY CATEGORIES</h3>
+            <div class="meet">
+                <p>다양한 카테고리의 나이키 상품들을 만나보세요</p>
+                <div class="more_check">
+                    <a class="shop_more" href="#" onclick="event.preventDefault()">더보기
+                        <img src="./images/icon/arrow.png" alt="흰색 화살표">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper shopby">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_001.jpg" alt="트레이닝"></a>
+                            <p>TRAINNING</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_002.jpg" alt="댄스"></a>
+                            <p>DANCE</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_003.jpg" alt="축구"></a>
+                            <p>SOCCER</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_004.jpg" alt="스케이트보드"></a>
+                            <p>SKATE BOARD</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_005.jpg" alt="농구"></a>
+                            <p>BASKETBALL</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cate_section">
+                            <a href="#" onclick="event.preventDefault()"><img src="./images/010_category/category_006.png" alt="런닝"></a>
+                            <p>RUNNING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer_section">
+                <div class="left_section">
+                    <p><a href="#" onclick="event.preventDefault()"><img src="./images/icon/logo.png" alt="로고"></a></p>
+                    <span>사업자등록번호 : 220-88-09068 | 통신판매업신고 : 2011-서울강남-03461 | <a href="#" onclick="event.preventDefault()">사업자정보확인</a></span>
+                    <address>서울 강남구 테헤란로 152 강남파이낸스센터 30층 | 상호명 : (유)나이키코리아 | 대표자 : 구준원<br>11th floor of Doosan Building, 726, Eonju-ro, Gangnam-gu, Seoul, KOREA | TEL : 080-816-7671</address>
+                    <a href="#" onclick="event.preventDefault()">이용약관 | 개인정보 처리방침 | 위치정보이용약관 | 영상정보처리기기 운영방침</a>
+                    <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+                </div>
+                <div class="right_section">
+                    <dl>
+                        <dt><a href="#" onclick="event.preventDefault()">안내</a></dt>
+                        <dd><a href="#" onclick="event.preventDefault()">멤버가입</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">매장찾기</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">제품 가이드</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">런닝화 가이드</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#" onclick="event.preventDefault()">멤버 혜택</a></dt>
+                        <dd><a href="#" onclick="event.preventDefault()">웰컴 쿠폰</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">생일 쿠폰</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">학생 할인 쿠폰</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#" onclick="event.preventDefault()">고객센터</a></dt>
+                        <dd><a href="#" onclick="event.preventDefault()">주문배송조회</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">반품 정책</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">결제 방법</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">공지사항</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">문의하기</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#" onclick="event.preventDefault()">회사소개</a></dt>
+                        <dd><a href="#" onclick="event.preventDefault()">About Nike</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">소식</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">채용</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">투자자</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">지속가능성</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">코칭</a></dd>
+                        <dd><a href="#" onclick="event.preventDefault()">신고하기</a></dd>
+                    </dl>
+                </div>
+            </div>            
+        </footer>
+    </div>
+</body>
+</html>
