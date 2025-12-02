@@ -86,17 +86,26 @@ const adSwiper  = new Swiper(".swiper.ad", {
 // 보메로
 // Swiper 초기화
 const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 5,         // 화면에 보여질 슬라이드 수
-    centeredSlides: true,     // 가운데 슬라이드 기준
-    loop: false,              // 무한 루프
-    grabCursor: true,         // 드래그 커서
-    slideToClickedSlide: true,// 클릭한 슬라이드로 이동
-    speed: 600,               // 이동 속도(ms)
-    initialSlide: 3,          // 가운데 슬라이드부터 시작 (슬라이드 인덱스는 0부터 시작)
+    slidesPerView: 5,         
+    centeredSlides: true,     
+    loop: false,              
+    grabCursor: true,         
+    slideToClickedSlide: true,
+    speed: 600,               
+    initialSlide: 3,          
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
+
+// 페이지 로드 후 가운데 슬라이드 텍스트 활성화
+window.addEventListener('load', () => {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    const titleText = activeSlide.querySelector('.title_text');
+    if (titleText) {
+        titleText.classList.add('active');
+    }
 });
 
 // 클릭 시 텍스트 보이기
@@ -107,21 +116,20 @@ swiper.slides.forEach(slide => {
     });
 });
 
-// 페이지 로드 후, 가운데 슬라이드의 텍스트를 자동으로 활성화
+// 슬라이드 변경 시 텍스트 활성화
 swiper.on('slideChange', function () {
-    // 모든 슬라이드에서 active 클래스 제거
     swiper.slides.forEach(s => s.querySelector('.title_text')?.classList.remove('active'));
-    // 현재 활성화된 슬라이드의 텍스트를 활성화
     const activeSlide = swiper.slides[swiper.activeIndex]; 
     const titleText = activeSlide.querySelector('.title_text'); 
     if (titleText) {
-        titleText.classList.add('active'); // 텍스트 활성화
+        titleText.classList.add('active');
     }
 });
 
-// Swiper 초기화 호출
+// 초기화
 swiper.init();
-swiper.update(); // 초기화 후 강제로 업데이트
+swiper.update();
+
 
 
 

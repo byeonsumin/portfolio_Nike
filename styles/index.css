@@ -59,7 +59,7 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
 #wrap .banner-section .banner .swiper-wrapper .swiper-slide .puffer_write_01 .view_more {
     display: inline-block;
     width: 120px; height: 44px; background-color: #fff;
-    text-align: center; 
+    text-align: center; transition: all 0.3s ease;
 }
 #wrap .banner-section .banner .swiper-wrapper .swiper-slide .puffer_write_01 .view_more:hover {
     display: inline-block;
@@ -87,8 +87,6 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
     font-weight: 300;
 }
 #wrap .banner-section .banner .swiper-wrapper .swiper-slide img {width: 1920px; height: 815px; object-fit: cover;}
-.swiper-button-next {background-color: red;}
-.swiper-button-prev {background-color: red;}
 
 
 
@@ -264,7 +262,7 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
     border: 1px solid #fff;
     color: #fff; font-size: 0.813rem; letter-spacing: 0.03em;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 30px; transition: all 0.3s ease;
 }
 
 .clothes {color:#000; font-weight: 520; }
@@ -290,6 +288,7 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
 }
 .swiper-wrapper .swiper-slide .puffer_p {
     font-size: 0.875rem; line-height:1.6; margin-bottom: 10px; color: #fff; margin-top: 20px;
+    width: 270px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;    
 }
 
 .product_flex {display: flex;}
@@ -499,19 +498,7 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
     height: 384px;
     opacity: 1;  /* 선택된 슬라이드만 opacity 100% */
 }
-/* Swiper 버튼 (이전/다음 버튼) 스타일 */
-.swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    transform: translateY(-50%); /* 버튼을 세로로 중앙 배치 */
-    background-color: #fff;
-    width: 40px;  /* 버튼 크기 */
-    height: 40px; /* 버튼 크기 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /* 추가적인 스타일 (타이틀 텍스트 스타일 등) */
 /* 기본 상태에서는 모든 title_text의 opacity를 0으로 설정 */
 .title_text {
@@ -744,36 +731,13 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
 
 
 
-
-
-
-
-
-
-
-/* Swiper 내비게이션 버튼 기본 스타일 */
-.swiper-button-prev,
-.swiper-button-next {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    transform: translateY(-50%); /* 버튼을 세로로 중앙 배치 */
-    background-color: transparent;
-    border: none;
-    width: 40px;  /* 버튼 크기 */
-    height: 40px; /* 버튼 크기 */
-    cursor: pointer;
-
-}
-
 /* 이전 버튼 (왼쪽 화살표 이미지) */
 .swiper-button-prev {
-    transform: translateY(-50%) scaleX(-1); /* 세로 중앙 정렬 + 이미지 반전 */
+    transform: translateY(-10%) scaleX(-1); /* 세로 중앙 정렬 + 이미지 반전 */
     background-image: url('../images/icon/arrow.png'); /* 왼쪽 화살표 이미지 */
     background-size: contain; /* 이미지 크기 맞추기 */
-    cursor: pointer; /* 커서 스타일 */
+    cursor: pointer; /* 커서 스타일 */ opacity: 0.7;
 }
-
 
 /* 다음 버튼 (오른쪽 화살표 이미지) */
 .swiper-button-next {
@@ -782,11 +746,12 @@ header .gnb ul li a {font-size: 0.938rem; font-weight: 440;}
     background-image: url(../images/icon/arrow.png); /* 오른쪽 화살표 이미지 경로 */
     background-size: contain;  /* 이미지 크기 맞추기 */
     background-repeat: no-repeat; /* 반복되지 않도록 설정 */
-    background-position: center; /* 이미지 중앙에 배치 */
+    background-position: center; /* 이미지 중앙에 배치 */ opacity: 0.7;
 }
 
 /* 버튼 hover 시 */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    opacity: 0.8; /* 버튼 hover 시 투명도 변화 */
+    opacity: 1; /* 버튼 hover 시 투명도 변화 */
 }
+
